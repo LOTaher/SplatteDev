@@ -1,4 +1,13 @@
 import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import GithubButton from "@/components/GithubButton";
 
 export default function Home() {
   return (
@@ -23,8 +32,20 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <h1 className="mt-8 mb-8">Projects</h1>
           <div>
-            <h1 className="mt-8">Projects</h1>
+            <Card className="rounded">
+              <CardHeader>
+                <CardTitle className="text-white">BeGroovy</CardTitle>
+                <CardDescription className="text-[#8e8f93">
+                  A music sharing social media website to upgrade your music
+                  collection.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <GithubButton src="https://github.com/LOTaher/BeGroovy" />
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
