@@ -1,9 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import { FC } from "react";
-import { Button } from "./ui/button";
-import { useRouter } from "next/navigation";
 
 function ArrowIcon() {
   return (
@@ -31,6 +27,7 @@ const LinkButton: FC<LinkButtonProps> = ({ src }) => {
     <Link
       href={src}
       className="flex items-center text-md font-medium text-white border p-2"
+      target="_blank"
     >
       <div className="pr-2">
         <ArrowIcon />

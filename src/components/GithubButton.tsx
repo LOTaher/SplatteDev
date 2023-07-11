@@ -33,13 +33,13 @@ const GithubButton: FC<GithubButtonProps> = ({ src }) => {
   return (
     <Link
       href={src}
-      className="flex items-center text-md font-medium text-white"
+      className="flex items-center text-md font-medium text-white border p-2"
       target="_blank"
     >
       <div className="pr-2">
         <GithubIcon />
       </div>
-      <span>Check out on Github</span>
+      <span>Github</span>
     </Link>
   );
 };
