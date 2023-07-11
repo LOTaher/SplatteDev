@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import GithubButton from "@/components/GithubButton";
+import LinkButton from "@/components/LinkButton";
 
 export default function Home() {
   return (
@@ -43,7 +44,10 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <GithubButton src="https://github.com/LOTaher/BeGroovy" />
+                <div className="flex flex-row space-x-2">
+                  <GithubButton src="https://github.com/LOTaher/BeGroovy" />
+                  <LinkButton src="" />
+                </div>
               </CardContent>
             </Card>
           </div>
