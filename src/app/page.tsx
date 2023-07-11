@@ -28,14 +28,56 @@ export default function Home() {
               <p>
                 I am a Full-Stack Web Developer, mentor, and student. I attend
                 Northeastern University located in Boston, Massachusetts where I
-                am studying Computer Science. I am currently working with Oasis
-                and Northeastern Electric Racing on campus.
+                am studying Computer Science. I am currently working with{" "}
+                <a
+                  href="https://oasisneu.com/"
+                  className="bold underline hover:text-white"
+                >
+                  Oasis
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://github.com/Northeastern-Electric-Racing"
+                  className="bold underline hover:text-white"
+                >
+                  Northeastern Electric Racing
+                </a>{" "}
+                on campus.
               </p>
             </div>
           </div>
           <h1 className="mt-8 mb-8">Projects</h1>
           <div>
-            <Card className="rounded">
+            <Card className="rounded mb-8">
+              <CardHeader>
+                <CardTitle className="text-white">FreeHand</CardTitle>
+                <CardDescription className="text-[#8e8f93">
+                  Open Source Illustrations designed to elevate your next
+                  project.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-row space-x-2">
+                  <GithubButton src="https://github.com/LOTaher" />
+                  <LinkButton src="https://www.drawfreehand.co/" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="rounded mb-8">
+              <CardHeader>
+                <CardTitle className="text-white">splatte.dev</CardTitle>
+                <CardDescription className="text-[#8e8f93">
+                  My personal website built using Next.js, Tailwind CSS, and
+                  Vercel.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-row space-x-2">
+                  <GithubButton src="https://github.com/LOTaher/SplatteDev" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="rounded mb-8">
               <CardHeader>
                 <CardTitle className="text-white">BeGroovy</CardTitle>
                 <CardDescription className="text-[#8e8f93">
@@ -46,11 +88,11 @@ export default function Home() {
               <CardContent>
                 <div className="flex flex-row space-x-2">
                   <GithubButton src="https://github.com/LOTaher/BeGroovy" />
-                  <LinkButton src="" />
                 </div>
               </CardContent>
             </Card>
           </div>
+          <h1 className="mt-8 mb-8">Blog</h1>
         </div>
       </div>
     </main>
