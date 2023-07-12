@@ -7,13 +7,13 @@ import { LayoutGroup, motion } from "framer-motion";
 
 const navItems = {
   "/": {
-    name: "Home",
+    name: "/",
   },
   "/blog": {
-    name: "Blog",
+    name: "/blog",
   },
   "/guestbook": {
-    name: "Guestbook",
+    name: "/guestbook",
   },
 };
 

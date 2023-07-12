@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -15,7 +16,7 @@ export default function Home() {
     <main className="flex justify-center h-screen">
       <div className="h-full w-full md:max-w-2xl">
         <div className="content-start flex-col">
-          <h1 className="mb-8">Hey, I&apos;m Laith</h1>
+          <h1 className="mb-8">Hi, I&apos;m Laith</h1>
           <div className="flex content-center space-x-3">
             <Image
               src="https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1694649600&v=beta&t=YChvWMfOS6TA28rEscX06DIeC6oJdhYDpa4reBs07P0"
@@ -26,22 +27,24 @@ export default function Home() {
             />
             <div className="flex items-center">
               <p>
-                I am a Full-Stack Web Developer, mentor, and student. I attend
-                Northeastern University located in Boston, Massachusetts where I
-                am studying Computer Science. I am currently working with{" "}
-                <a
+                I am a full-stack web developer, mentor, and student. I attend
+                Northeastern University where I am studying Computer Science. I
+                am currently working with{" "}
+                <Link
                   href="https://oasisneu.com/"
                   className="bold underline hover:text-white"
+                  target="_blank"
                 >
                   Oasis
-                </a>{" "}
+                </Link>{" "}
                 and{" "}
-                <a
+                <Link
                   href="https://github.com/Northeastern-Electric-Racing"
                   className="bold underline hover:text-white"
+                  target="_blank"
                 >
                   Northeastern Electric Racing
-                </a>{" "}
+                </Link>{" "}
                 on campus.
               </p>
             </div>
@@ -50,7 +53,7 @@ export default function Home() {
           <div>
             <Card className="rounded mb-8">
               <CardHeader>
-                <CardTitle className="text-white">FreeHand</CardTitle>
+                <CardTitle className="text-white">FreeHand (WIP)</CardTitle>
                 <CardDescription className="text-[#8e8f93]">
                   Open Source Illustrations designed to elevate your next
                   project.
