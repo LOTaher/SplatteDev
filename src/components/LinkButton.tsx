@@ -26,7 +26,7 @@ const LinkButton: FC<LinkButtonProps> = ({ src }) => {
   return (
     <Link
       href={src}
-      className="flex items-center text-md font-medium text-white border p-2"
+      className="flex items-center text-md font-medium text-white border p-2 rounded"
       target="_blank"
     >
       <div className="pr-2">

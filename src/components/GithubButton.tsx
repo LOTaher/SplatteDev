@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 
-function GithubIcon() {
+export function GithubIcon() {
   return (
     <svg
       width="20"
@@ -33,7 +33,7 @@ const GithubButton: FC<GithubButtonProps> = ({ src }) => {
   return (
     <Link
       href={src}
-      className="flex items-center text-md font-medium text-white border p-2"
+      className="flex items-center text-md font-medium text-white border p-2 rounded"
       target="_blank"
     >
       <div className="pr-2">
