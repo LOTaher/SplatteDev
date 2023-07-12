@@ -1,9 +1,14 @@
+import Footer from "@/components/Footer";
 import { prisma } from "@/db";
 import { SignInButton, SignOutButton, currentUser } from "@clerk/nextjs";
+import { revalidatePath } from "next/cache";
 
 function getEntries() {
   return prisma.guestbook.findMany({
     take: 100,
+    orderBy: {
+      createdAt: "desc",
+    },
   });
 }
 
@@ -23,6 +28,8 @@ async function createGuestBookEntry(data: FormData) {
       name: user?.firstName + " " + user?.lastName,
     },
   });
+
+  revalidatePath("/guestbook");
 }
 
 export default async function Guestbook() {
@@ -71,7 +78,7 @@ export default async function Guestbook() {
               </form>
             </div>
           )}
-          <div className="mt-5">
+          <div className="mt-5 mb-4">
             {entries.map((entry) => (
               <div key={entry.id} className="flex flex-col space-y-1 mb-2">
                 <div className="w-full text-sm break-words mb-2">
@@ -81,6 +88,7 @@ export default async function Guestbook() {
               </div>
             ))}
           </div>
+          <Footer />
         </div>
       </div>
     </main>
