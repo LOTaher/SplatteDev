@@ -3,6 +3,7 @@ import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { Mdx } from "@/components/Mdx";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 interface BlogPageProps {
   params: {
@@ -37,7 +38,10 @@ const BlogPage = async ({ params }: BlogPageProps) => {
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
         <p className="text-sm text-[#8e8f93]">{blog.publishedAt}</p>
       </div>
-      <Mdx code={blog.body.code} />
+      <div className="mb-8">
+        <Mdx code={blog.body.code} />
+      </div>
+      <Footer />
     </>
   );
 };
