@@ -69,6 +69,7 @@ export default function Home() {
               <CardContent>
                 <div className="flex flex-row space-x-2">
                   <GithubButton src="https://github.com/LOTaher/SplatteDev" />
+                  <LinkButton src="https://splatte.dev/" />
                 </div>
               </CardContent>
             </Card>
