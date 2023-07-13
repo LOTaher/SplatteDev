@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && contentlayer build && next build",
     "start": "next start",
-    "lint": "next lint",
-    "content": "contentlayer build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.15",
