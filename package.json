@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && contentlayer build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "content": "contentlayer build"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.15",
