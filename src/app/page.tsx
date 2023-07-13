@@ -23,29 +23,21 @@ export default function Home() {
               alt="Laith Portrait"
               width={120}
               height={120}
-              className="rounded-md"
+              className="rounded"
             />
             <div className="flex items-center">
-              <p>
-                I am a full-stack web developer, mentor, and student. I attend
-                Northeastern University where I am studying Computer Science. I
-                am currently working with{" "}
+              <p className="text-[#D3D4D4]">
+                I&apos;m a full-stack web developer and student. I am studying
+                Computer Science at Northeastern Univeristy. I&apos;ve been
+                spending my free time building my startup,{" "}
                 <Link
-                  href="https://oasisneu.com/"
+                  href="https://github.com/LOTaher/Freehand"
                   className="bold underline hover:text-white"
                   target="_blank"
                 >
-                  Oasis
-                </Link>{" "}
-                and{" "}
-                <Link
-                  href="https://github.com/Northeastern-Electric-Racing"
-                  className="bold underline hover:text-white"
-                  target="_blank"
-                >
-                  Northeastern Electric Racing
-                </Link>{" "}
-                on campus.
+                  Freehand
+                </Link>
+                !
               </p>
             </div>
           </div>
@@ -53,7 +45,7 @@ export default function Home() {
           <div>
             <Card className="rounded mb-8">
               <CardHeader>
-                <CardTitle className="text-white">FreeHand (WIP)</CardTitle>
+                <CardTitle className="text-white">Freehand (WIP)</CardTitle>
                 <CardDescription className="text-[#8e8f93]">
                   Open Source Illustrations designed to elevate your next
                   project.
@@ -61,7 +53,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-row space-x-2">
-                  <GithubButton src="https://github.com/LOTaher" />
+                  <GithubButton src="https://github.com/LOTaher/Freehand" />
                   <LinkButton src="https://www.drawfreehand.co/" />
                 </div>
               </CardContent>
@@ -70,8 +62,8 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-white">splatte.dev</CardTitle>
                 <CardDescription className="text-[#8e8f93]">
-                  My personal website built using Next.js, Tailwind CSS, and
-                  Vercel.
+                  My personal website built using Next.js, Tailwind CSS, Prisma,
+                  and Vercel.
                 </CardDescription>
               </CardHeader>
               <CardContent>
