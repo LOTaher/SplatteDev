@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex items-center">
               <p className="text-[#D3D4D4]">
                 I&apos;m a full-stack web developer and student. I am studying
-                Computer Science at Northeastern Univeristy. I&apos;ve been
+                Computer Science at Northeastern University. I&apos;ve been
                 spending my free time building my startup,{" "}
                 <Link
                   href="https://github.com/LOTaher/Freehand"
