@@ -25,7 +25,7 @@ async function createGuestBookEntry(data: FormData) {
   await prisma.guestbook.create({
     data: {
       content: entry,
-      name: user?.firstName + " " + user?.lastName,
+      name: user?.username || "Anonymous",
     },
   });
 
