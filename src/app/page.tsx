@@ -75,6 +75,20 @@ export default function Home() {
             </Card>
             <Card className="rounded mb-8">
               <CardHeader>
+                <CardTitle className="text-white">License Generator</CardTitle>
+                <CardDescription className="text-[#8e8f93]">
+                  Generate a license for your project on the terminal.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-row space-x-2">
+                  <GithubButton src="https://github.com/LOTaher/License-Generator" />
+                  <LinkButton src="https://www.npmjs.com/package/@lotaher/license-generator" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="rounded mb-8">
+              <CardHeader>
                 <CardTitle className="text-white">BeGroovy</CardTitle>
                 <CardDescription className="text-[#8e8f93]">
                   A music sharing social media website to upgrade your music
