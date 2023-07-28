@@ -27,6 +27,7 @@ export default function Footer() {
           checkout my work on github
         </Link>
       </footer>
+      <br></br>
     </>
   );
 }
