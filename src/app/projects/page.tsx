@@ -1,5 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
+import Footer from "@/components/Footer";
+import GithubButton from "@/components/GithubButton";
+import LinkButton from "@/components/LinkButton";
 import {
   Card,
   CardContent,
@@ -7,50 +8,23 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import GithubButton from "@/components/GithubButton";
-import LinkButton from "@/components/LinkButton";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 
-export default function Home() {
+export default function Projects() {
   return (
     <main className="flex justify-center h-screen">
       <div className="h-full w-full md:max-w-2xl">
         <div className="content-start flex-col">
-          <h1 className="mb-8">Hi, I&apos;m Laith</h1>
-          <div className="flex content-center space-x-3">
-            <Image
-              src="https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1694649600&v=beta&t=YChvWMfOS6TA28rEscX06DIeC6oJdhYDpa4reBs07P0"
-              alt="Laith Portrait"
-              width={120}
-              height={120}
-              className="rounded"
-            />
-            <div className="flex items-center">
-              <p className="text-[#D3D4D4]">
-                I&apos;m a full-stack developer and student. I am studying
-                Computer Science at Northeastern University. I&apos;ve been
-                spending my free time building my startup,{" "}
-                <Link
-                  href="https://github.com/LOTaher/Freehand"
-                  className="bold underline hover:text-white"
-                  target="_blank"
-                >
-                  Freehand
-                </Link>
-                !
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-between mt-8 mb-8">
-            <h1 className="">Featured Projects</h1>
+          <div className="mb-2 flex justify-between">
+            <h1>Projects</h1>
             <Link
-              href="/projects"
+              href="/"
               className="text-[#8e8f93] text-sm underline hover:text-white"
             >
-              view all my projects
+              go back home
             </Link>
           </div>
-          <div>
+          <div className="mt-8 mb-8">
             <Card className="rounded mb-8">
               <CardHeader>
                 <CardTitle className="text-white">Freehand (WIP)</CardTitle>
@@ -92,6 +66,20 @@ export default function Home() {
                 <div className="flex flex-row space-x-2">
                   <GithubButton src="https://github.com/LOTaher/License-Generator" />
                   <LinkButton src="https://www.npmjs.com/package/@lotaher/license-generator" />
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="rounded mb-8">
+              <CardHeader>
+                <CardTitle className="text-white">BeGroovy</CardTitle>
+                <CardDescription className="text-[#8e8f93]">
+                  A music sharing social media website to upgrade your music
+                  collection.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-row space-x-2">
+                  <GithubButton src="https://github.com/LOTaher/BeGroovy" />
                 </div>
               </CardContent>
             </Card>
