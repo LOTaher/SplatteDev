@@ -19,3 +19,22 @@ p {
   line-height: 1.2;
   color: #8e8f93;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8e8f93;
+  border-radius: 5px;
+  border: 3px solid #011019;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
