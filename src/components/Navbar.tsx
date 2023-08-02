@@ -22,6 +22,9 @@ export default function Navbar() {
   if (pathname.includes("/blog/")) {
     pathname = "/blog";
   }
+  if (pathname.includes("/projects")) {
+    pathname = "/";
+  }
 
   return (
     <aside className="-ml-[8px] mb-8 tracking-tight">
