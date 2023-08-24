@@ -1,15 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import GithubButton from "@/components/GithubButton";
-import LinkButton from "@/components/LinkButton";
 import Footer from "@/components/Footer";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -41,60 +33,43 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          {/* Projects Section */}
           <div className="flex justify-between mt-8 mb-8">
-            <h1 className="">Featured Projects</h1>
-            <Link
-              href="/projects"
-              className="text-[#8e8f93] text-sm underline hover:text-white"
-            >
-              view all my projects
-            </Link>
+            <h1 className="">Projects</h1>
           </div>
-          <div>
-            <Card className="rounded mb-8">
-              <CardHeader>
-                <CardTitle className="text-white">Freehand (WIP)</CardTitle>
-                <CardDescription className="text-[#8e8f93]">
-                  Open Source Illustrations designed to elevate your next
-                  project.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-row space-x-2">
-                  <GithubButton src="https://github.com/LOTaher/Freehand" />
-                  <LinkButton src="https://www.drawfreehand.co/" />
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="rounded mb-8">
-              <CardHeader>
-                <CardTitle className="text-white">splatte.dev</CardTitle>
-                <CardDescription className="text-[#8e8f93]">
-                  My personal website built using Next.js, Tailwind CSS, Prisma,
-                  and Vercel.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-row space-x-2">
-                  <GithubButton src="https://github.com/LOTaher/SplatteDev" />
-                  <LinkButton src="https://splatte.dev/" />
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="rounded mb-8">
-              <CardHeader>
-                <CardTitle className="text-white">License Generator</CardTitle>
-                <CardDescription className="text-[#8e8f93]">
-                  Generate a license for your project on the terminal.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-row space-x-2">
-                  <GithubButton src="https://github.com/LOTaher/License-Generator" />
-                  <LinkButton src="https://www.npmjs.com/package/@lotaher/license-generator" />
-                </div>
-              </CardContent>
-            </Card>
+          <div className="mb-8">
+            <Project
+              title="Freehand"
+              description="open source illustrations designed to elebate your next project."
+              wip
+              link="https://github.com/LOTaher/Freehand"
+            />
+
+            <Project
+              title="splatte.dev"
+              description="my personal website built using next.js, tailwind css, prisma, and vercel."
+              link="https://github.com/LOTaher/SplatteDev"
+            />
+
+            <Project
+              title="splatte/ui"
+              description="a collection of fully customizable ui components for next.js and react, just a copy and paste away."
+              wip
+              link="https://github.com/LOTaher/ui"
+            />
+
+            <Project
+              title="License Generator"
+              description="generate a license for your project on the terminal."
+              link="https://github.com/LOTaher/License-Generator"
+            />
+
+            <Project
+              title="BeGroovy"
+              description="a music sharing social media website to upgrade your music collection."
+              link="https://github.com/LOTaher/BeGroovy"
+            />
           </div>
           <Footer />
         </div>
