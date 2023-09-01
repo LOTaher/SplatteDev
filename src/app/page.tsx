@@ -41,7 +41,7 @@ export default function Home() {
           <div className="mb-8">
             <Project
               title="Freehand"
-              description="open source illustrations designed to elebate your next project."
+              description="open source illustrations designed to elevate your next project."
               wip
               link="https://github.com/LOTaher/Freehand"
             />
@@ -55,7 +55,6 @@ export default function Home() {
             <Project
               title="splatte/ui"
               description="a collection of fully customizable ui components for next.js and react, just a copy and paste away."
-              wip
               link="https://github.com/LOTaher/ui"
             />
 
