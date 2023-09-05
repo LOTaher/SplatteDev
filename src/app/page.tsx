@@ -21,15 +21,8 @@ export default function Home() {
               <p className="text-[#D3D4D4]">
                 I&apos;m a full-stack developer and student. I am studying
                 Computer Science at Northeastern University. I&apos;ve been
-                spending my free time building my startup,{" "}
-                <Link
-                  href="https://github.com/LOTaher/Freehand"
-                  className="bold underline hover:text-white"
-                  target="_blank"
-                >
-                  Freehand
-                </Link>
-                !
+                spending my free time building and maintaining all the projects
+                below!{" "}
               </p>
             </div>
           </div>
