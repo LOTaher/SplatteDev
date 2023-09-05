@@ -66,7 +66,7 @@ export default function Home() {
 
             <Project
               title="ez-ignore"
-              description="create a custom .gitignore filestriaght from the terminal"
+              description="create a custom .gitignore file straight from the terminal"
               link="https://github.com/LOTaher/ez-ignore"
             />
 
