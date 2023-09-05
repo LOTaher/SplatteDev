@@ -65,6 +65,12 @@ export default function Home() {
             />
 
             <Project
+              title="ez-ignore"
+              description="create a custom .gitignore filestriaght from the terminal"
+              link="https://github.com/LOTaher/ez-ignore"
+            />
+
+            <Project
               title="BeGroovy"
               description="a music sharing social media website to upgrade your music collection."
               link="https://github.com/LOTaher/BeGroovy"
