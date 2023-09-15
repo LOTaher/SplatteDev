@@ -68,6 +68,9 @@ export default function Home() {
               description="a music sharing social media website to upgrade your music collection."
               link="https://github.com/LOTaher/BeGroovy"
             />
+            <p className="mt-4 text-sm italic font-light">
+              Course projects can be shown upon request.
+            </p>
           </div>
           <Footer />
         </div>
