@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 import Project from "@/components/Project";
+import ProfilePicture from "../../public/laith.jpeg";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="mb-8">Hi, I&apos;m Laith</h1>
           <div className="flex content-center space-x-3">
             <Image
-              src="/laith.jpeg"
+              src={ProfilePicture}
               alt="Laith Portrait"
               width={120}
               height={120}
