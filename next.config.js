@@ -6,7 +6,7 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
-    domains: ["media.licdn.com"],
+    domains: ["media.licdn.com", "utfs.io"],
   },
 };
 
