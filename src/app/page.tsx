@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="mb-8">Hi, I&apos;m Laith</h1>
           <div className="flex content-center space-x-3">
             <Image
-              src="/../public/laith.jpeg"
+              src="/laith.jpeg"
               alt="Laith Portrait"
               width={120}
               height={120}
