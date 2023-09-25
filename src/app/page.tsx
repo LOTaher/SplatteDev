@@ -45,6 +45,17 @@ export default function Home() {
             />
 
             <Project
+              title="ResumeAPI"
+              description="a rest api for my resume information written in go."
+              link="https://github.com/LOTaher/ResumeAPI"
+            />
+
+            <Project
+              title="BeGroovy"
+              description="a music sharing social media website to upgrade your music collection."
+              link="https://github.com/LOTaher/BeGroovy"
+            />
+            <Project
               title="splatte/ui"
               description="a collection of fully customizable ui components for next.js and react, just a copy and paste away."
               link="https://github.com/LOTaher/ui"
@@ -62,11 +73,6 @@ export default function Home() {
               link="https://github.com/LOTaher/ez-ignore"
             />
 
-            <Project
-              title="BeGroovy"
-              description="a music sharing social media website to upgrade your music collection."
-              link="https://github.com/LOTaher/BeGroovy"
-            />
             <p className="mt-4 text-sm italic font-light">
               Course projects can be shown upon request.
             </p>
