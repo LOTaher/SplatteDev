@@ -19,8 +19,9 @@ export default function Home() {
             <div className="flex items-center">
               <p className="text-[#D3D4D4]">
                 I&apos;m a second year Computer Science major at Northeastern
-                University looking for work. I&apos;ve been spending my free
-                time building and maintaining all the projects below!{" "}
+                University. I am going to be on co-op with Johnson & Johnson
+                starting Spring 2024. I&apos;ve been spending my free time
+                building and maintaining all the projects below!{" "}
               </p>
             </div>
           </div>
