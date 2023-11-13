@@ -18,10 +18,25 @@ export default function Home() {
             />
             <div className="flex items-center">
               <p className="text-[#D3D4D4]">
-                I&apos;m a second year Computer Science major at Northeastern
-                University. I am going to be on co-op with Johnson & Johnson
-                starting Spring 2024. I&apos;ve been spending my free time
-                building and maintaining all the projects below!{" "}
+                I&apos;m a second year Computer Science major at{" "}
+                <a
+                  className="text-white underline"
+                  href="https://www.northeastern.edu/"
+                  target="_blank"
+                >
+                  Northeastern University
+                </a>
+                . I&apos;ll be on co-op working at{" "}
+                <a
+                  href="https://www.jnj.com/"
+                  target="_blank"
+                  className="text-white underline"
+                >
+                  Johnson & Johnson
+                </a>{" "}
+                as a Technology Co-op starting in Spring 2024. I&apos;ve been
+                spending my free time building and maintaining all the projects
+                below!{" "}
               </p>
             </div>
           </div>
