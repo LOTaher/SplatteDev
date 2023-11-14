@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex justify-center h-screen">
       <div className="h-full w-full md:max-w-2xl">
         <div className="content-start flex-col">
-          <h1 className="mb-8">Hi, I&apos;m Laith</h1>
+          <h1 className="mb-8">Hi, my name is Laith</h1>
           <div className="flex content-center space-x-3">
             <Image
               src="https://utfs.io/f/ad659344-7775-49fb-a287-932bce768c30-ge3if.jpeg"
