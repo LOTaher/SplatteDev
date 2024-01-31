@@ -9,31 +9,35 @@ export default function Blog() {
         <div className="content-start flex-col">
           <h1 className="mb-2">Checkout my Blog</h1>
           <div className="mt-8 mb-8">
-            {allBlogs
-              .sort((a, b) => {
-                if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
-                  return -1;
-                }
-                return 1;
-              })
-              .map((post) => (
-                <Link
-                  key={post.slug}
-                  className="flex flex-col space-y-1 mb-4"
-                  href={`/blog/${post.slug}`}
-                >
-                  <div className="w-full flex flex-col">
-                    <div className="flex justify-between">
-                      <p className="text-white tracking-tight hover:text-white hover:underline text-xl">
-                        {post.title}
-                      </p>
-                      <p className="text-[#8e8f93] text-sm">
-                        {post.publishedAt}
-                      </p>
+            {allBlogs.length > 0 ? (
+              allBlogs
+                .sort((a, b) => {
+                  if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+                    return -1;
+                  }
+                  return 1;
+                })
+                .map((post) => (
+                  <Link
+                    key={post.slug}
+                    className="flex flex-col space-y-1 mb-4"
+                    href={`/blog/${post.slug}`}
+                  >
+                    <div className="w-full flex flex-col">
+                      <div className="flex justify-between">
+                        <p className="text-white tracking-tight hover:text-white hover:underline text-xl">
+                          {post.title}
+                        </p>
+                        <p className="text-[#8e8f93] text-sm">
+                          {post.publishedAt}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))
+            ) : (
+              <p>Coming soon...</p>
+            )}
           </div>
           <Footer />
         </div>
