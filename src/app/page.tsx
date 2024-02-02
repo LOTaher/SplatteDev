@@ -78,7 +78,7 @@ export default async function Home() {
           </div>
 
           {/* Projects Section */}
-          <div className="mt-8 mb-8">
+          <div className="mt-8 mb-7">
             <h1 className="">Projects</h1>
             <p className="text-xs">(some of them)</p>
           </div>
