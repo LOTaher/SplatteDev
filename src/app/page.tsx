@@ -102,9 +102,9 @@ export default async function Home() {
             />
 
             <Project
-              title="ResumeAPI"
-              description="a rest api for my resume information written in go."
-              link="https://github.com/LOTaher/ResumeAPI"
+              title="grog"
+              description="a lightweight node package manager written in go."
+              link="https://github.com/LOTaher/grog"
             />
 
             <Project
