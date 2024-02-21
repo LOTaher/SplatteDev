@@ -16,7 +16,7 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div className="mb-2">
-      <Link href={link} className="text-white mb-1 underline text-lg">
+      <Link href={link} className="text-white mb-1 underline text-lg" target="_blank">
         {title}{" "}
         {wip && (
           <Badge
