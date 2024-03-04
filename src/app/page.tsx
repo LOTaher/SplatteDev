@@ -42,8 +42,8 @@ export default async function Home() {
       <div className="h-full w-full md:max-w-2xl">
         <div className="content-start flex-col">
           <div className="mb-8">
-            <h1>Hi, my name is Laith</h1>
-            <p className="text-xs">(l-ay-th)</p>
+            <h1>hey, my name is Laith</h1>
+            <p className="text-xs">l-ay-th</p>
           </div>
           <div className="flex content-center space-x-3">
             <Image
@@ -79,10 +79,16 @@ export default async function Home() {
 
           {/* Projects Section */}
           <div className="mt-8 mb-7">
-            <h1 className="">Projects</h1>
-            <p className="text-xs">(some of them)</p>
+            <h1 className="">projects</h1>
+            <p className="text-xs">probably just what&apos;s pinned on github</p>
           </div>
           <div className="mb-8">
+            <Project
+              title="grog"
+              description="a lightweight node package manager written in go."
+              link="https://github.com/LOTaher/grog"
+            />
+
             <Project
               title="Freehand"
               description="open source illustrations designed to elevate your next project."
@@ -102,39 +108,10 @@ export default async function Home() {
             />
 
             <Project
-              title="grog"
-              description="a lightweight node package manager written in go."
-              link="https://github.com/LOTaher/grog"
-            />
-
-            <Project
-              title="pomelo"
-              description="bookmark and jump to your directories blazingly fast."
-              link="https://github.com/LOTaher/pomelo"
-            />
-
-            <Project
               title="License Generator"
               description="generate a license for your project on the terminal."
               link="https://github.com/LOTaher/License-Generator"
             />
-
-            {/* <Project
-              title="BeGroovy"
-              description="a music sharing social media website to upgrade your music collection."
-              link="https://github.com/LOTaher/BeGroovy"
-            />
-            <Project
-              title="splatte/ui"
-              description="a collection of fully customizable ui components for next.js and react, just a copy and paste away."
-              link="https://github.com/LOTaher/ui"
-            />
-
-            <Project
-              title="ez-ignore"
-              description="create a custom .gitignore file straight from the terminal"
-              link="https://github.com/LOTaher/ez-ignore"
-            /> */}
 
             <p className="mt-4 text-sm italic font-light">
               Course projects can be shown upon request.
@@ -142,9 +119,9 @@ export default async function Home() {
           </div>
 
           <div className="content-start flex-col">
-            <h1>Guestbook</h1>
+            <h1>guestbook</h1>
             {/* Inspired by @leeerob */}
-            <p className="mb-6 text-xs">(be nice)</p>
+            <p className="mb-6 text-xs">inspired by <a target="_blank" href="https://github.com/leerob" className="underline">@leerob</a></p>
             {!user && (
               <a className="text-white border p-2 rounded mb-5">
                 <SignInButton>Sign In</SignInButton>
