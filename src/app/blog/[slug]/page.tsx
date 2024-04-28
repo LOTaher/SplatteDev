@@ -1,9 +1,8 @@
-import { FC } from "react";
-import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { Mdx } from "@/components/Mdx";
 import Link from "next/link";
-import Footer from "@/components/Footer";
+import Footer from "src/components/Footer";
+import { Mdx } from "src/components/Mdx";
+import { allBlogs } from ".contentlayer/generated";
 
 interface BlogPageProps {
   params: {
@@ -25,22 +24,22 @@ const BlogPage = async ({ params }: BlogPageProps) => {
   return (
     <>
       <div className="flex justify-between">
-        <h1 className="font-bold text-2xl tracking-tighter max-w-[650px]">
+        <h1 className="font-medium text-2xl tracking-tighter max-w-[650px]">
           {blog.title}
         </h1>
         <Link
           href="/blog"
-          className="text-[#8e8f93] text-sm underline hover:text-white"
+          className="text-neutral-300 text-md underline hover:text-neutral-200"
         >
-          Back to blog
+          back ←
         </Link>
       </div>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <p className="text-sm text-[#8e8f93]">{blog.publishedAt}</p>
+        <p className="text-sm text-neutral-300">{blog.date}</p>
       </div>
-      <div className="mb-8">
+      <article className="mb-8 prose prose-invert">
         <Mdx code={blog.body.code} />
-      </div>
+      </article>
       <Footer />
     </>
   );

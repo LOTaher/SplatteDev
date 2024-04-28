@@ -2,22 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #111010;
-}
-
-h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
+html {
+  min-width: 360px;
 }
 
 p {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #8e8f93;
+  @apply text-neutral-300;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Remove Safari input shadow on mobile */
+input[type="text"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-scrollbar {
