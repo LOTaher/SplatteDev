@@ -2,7 +2,14 @@ import { allBlogs } from ".contentlayer/generated";
 import Footer from "src/components/Footer";
 import Link from "next/link";
 
-export function PostCol({ post }) {
+interface PostProps {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+}
+
+export function PostCol({ post }: { post: PostProps }) {
   return (
     <article className="flex flex-col gap-3">
       <Link href={`/blog/${post.slug}`}>
@@ -18,7 +25,7 @@ export function PostCol({ post }) {
   );
 }
 
-export function PostRow({ post }) {
+export function PostRow({ post }: { post: PostProps }) {
   return (
     <article className="flex justify-between">
       <Link href={`/blog/${post.slug}`}>
