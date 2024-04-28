@@ -14,15 +14,15 @@ export default async function Home() {
             <h1 className="text-2xl font-medium tracking-tighter">
               hey, my name is laith
             </h1>
-            <p className="text-sm">l-ay-th</p>
+            <p className="text-sm text-neutral-500">IPA /ˈleɪθ/</p>
           </div>
-          <div className="flex content-center space-x-3">
+          <div className="flex flex-col sm:flex-row content-center space-y-3 sm:space-y-0 sm:space-x-3">
             <Image
               src="/picture.png"
               alt="Laith Portrait"
               width={200}
               height={200}
-              className="rounded"
+              className="rounded-lg self-center md:self-auto"
             />
             <div className="flex items-center">
               <p className="text-neutral-300 text-md">
@@ -52,11 +52,8 @@ export default async function Home() {
             </div>
           </div>
 
-          <h1 className="mt-8 text-xl font-medium ">projects</h1>
-          <p className="text-sm mb-4">
-            probably just what&apos;s pinned on github
-          </p>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 mb-8">
+          <h1 className="mt-8 text-xl font-medium mb-4">projects</h1>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             <Project
               title="grog"
               description="a lightweight node package manager written in go."
@@ -93,10 +90,7 @@ export default async function Home() {
               link="https://github.com/LOTaher/License-Generator"
             />
           </div>
-          <h1 className="mt-8 text-xl font-medium ">blog</h1>
-          <p className="text-sm mb-4">
-            writing about things i find interesting
-          </p>
+          <h1 className="mt-8 text-xl font-medium mb-4">blog</h1>
           <div className="flex flex-col gap-4 mb-8">
             <span>
               {allBlogs.length > 0 ? (
