@@ -26,7 +26,7 @@ export default async function Home() {
             />
             <div className="flex items-center">
               <p className="text-neutral-300 text-md">
-                I&apos;m a second year Computer Science major at{" "}
+                I&apos;m a third year Computer Science major at{" "}
                 <strong>
                   <a
                     className="underline text-neutral-200"
@@ -36,7 +36,7 @@ export default async function Home() {
                     Northeastern University
                   </a>
                 </strong>
-                . I&apos;m currently on co-op working at{" "}
+                . I recently completed my co-op at{" "}
                 <strong>
                   <a
                     href="https://www.jnj.com/"
@@ -46,8 +46,9 @@ export default async function Home() {
                     Johnson & Johnson
                   </a>{" "}
                 </strong>
-                as a Technology Co-op. I&apos;ve been spending my free time
-                building and maintaining all the projects below!{" "}
+                as a Technology Co-op, and now looking for a new opportunity.
+                I&apos;ve been spending my free time building and maintaining
+                all the projects below!{" "}
               </p>
             </div>
           </div>
