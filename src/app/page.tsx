@@ -62,6 +62,12 @@ export default async function Home() {
             />
 
             <Project
+              title="LaithScript"
+              description="the interpreter for the laithscript programming language."
+              link="https://github.com/LOTaher/LaithScript"
+            />
+
+            <Project
               title="softbase"
               description="a key-value store backend for your next side project."
               link="https://github.com/LOTaher/softbase"
@@ -75,14 +81,8 @@ export default async function Home() {
 
             <Project
               title="splatte.dev"
-              description="my personal website using next.js and tailwind css."
+              description="my personal website built with next.js and tailwind css."
               link="https://github.com/LOTaher/SplatteDev"
-            />
-
-            <Project
-              title="Mirage"
-              description="a multipurpose bot for the oasis slack channel."
-              link="https://github.com/Oasis-NEU/Mirage"
             />
 
             <Project
