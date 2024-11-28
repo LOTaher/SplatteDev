@@ -3,7 +3,7 @@ import Link from "next/link";
 import { allBlogs } from ".contentlayer/generated";
 import { PostRow } from "../app/blog/page";
 import Footer from "src/components/Footer";
-import Project from "src/components/Project";
+import Project, { projects } from "src/components/Project";
 
 export default async function Home() {
   return (
@@ -16,82 +16,91 @@ export default async function Home() {
             </h1>
             <p className="text-sm text-neutral-500">IPA /ˈleɪθ/</p>
           </div>
-          <div className="flex flex-col sm:flex-row content-center space-y-3 sm:space-y-0 sm:space-x-3">
-            <Image
-              src="/picture.png"
-              alt="Laith Portrait"
-              width={200}
-              height={200}
-              className="rounded-lg self-center md:self-auto"
-            />
-            <div className="flex items-center">
-              <p className="text-neutral-300 text-md">
-                I&apos;m a third year Computer Science major at{" "}
-                <strong>
-                  <a
-                    className="underline text-neutral-200"
-                    href="https://www.northeastern.edu/"
-                    target="_blank"
-                  >
-                    Northeastern University
-                  </a>
-                </strong>
-                . I recently completed my co-op at{" "}
-                <strong>
-                  <a
-                    href="https://www.jnj.com/"
-                    target="_blank"
-                    className="underline hover:text-neutral-200"
-                  >
-                    Johnson & Johnson
-                  </a>{" "}
-                </strong>
-                as a Technology Co-op, and now looking for a new opportunity.
-                I&apos;ve been spending my free time building and maintaining
-                all the projects below!{" "}
-              </p>
+          <div className="items-center w-fit mb-8 flex flex-col sm:flex-row content-center space-y-3 sm:space-y-0 sm:space-x-5">
+            <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-rows-2 gap-2">
+                <div className="">
+                  <Image
+                    src="/HS0-F23.png"
+                    alt="Laith Portrait"
+                    width={600}
+                    height={100}
+                    className="rounded-lg object-cover h-full"
+                  />
+                </div>
+                <div className="">
+                  <Image
+                    src="/ExpressWorkshop.png"
+                    alt="Laith Portrait"
+                    width={300}
+                    height={200}
+                    className="rounded-lg object-cover w-full"
+                  />
+                </div>
+              </div>
+
+              <div className="">
+                <Image
+                  src="/DemoDay.jpg"
+                  alt="Laith Portrait"
+                  width={300}
+                  height={300}
+                  className="rounded-lg object-cover h-full w-full"
+                />
+              </div>
             </div>
+            <p className="text-neutral-300 text-md">
+              I&apos;m a third year Computer Science major @{" "}
+              <a
+                className="underline hover:text-neutral-200 text-white"
+                href="https://www.northeastern.edu/"
+                target="_blank"
+              >
+                Northeastern University
+              </a>
+              . Incoming Software Engineer @{" "}
+              <a
+                href="https://www.claim.co/"
+                target="_blank"
+                className="underline hover:text-neutral-200 text-white"
+              >
+                Claim
+              </a>
+              . Director of{" "}
+              <a
+                href="https://oasisneu.com/"
+                target="_blank"
+                className="underline hover:text-neutral-200 text-white"
+              >
+                Oasis
+              </a>
+              . Previously @{" "}
+              <a
+                href="https://www.jnj.com/"
+                target="_blank"
+                className="underline hover:text-neutral-200 text-white"
+              >
+                Johnson & Johnson
+              </a>{" "}
+              as a Technology Co-op. I spend my free time building, maintaining
+              and writing about tech!{" "}
+            </p>
           </div>
 
           <h1 className="mt-8 text-xl font-medium mb-4">projects</h1>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-            <Project
-              title="grog"
-              description="a lightweight node package manager written in go."
-              link="https://github.com/LOTaher/grog"
-            />
-
-            <Project
-              title="LaithScript"
-              description="the interpreter for the laithscript programming language."
-              link="https://github.com/LOTaher/LaithScript"
-            />
-
-            <Project
-              title="softbase"
-              description="a key-value store backend for your next side project."
-              link="https://github.com/LOTaher/softbase"
-            />
-
-            <Project
-              title="Freehand"
-              description="open source illustrations designed to elevate your next project."
-              link="https://github.com/LOTaher/Freehand"
-            />
-
-            <Project
-              title="splatte.dev"
-              description="my personal website built with next.js and tailwind css."
-              link="https://github.com/LOTaher/SplatteDev"
-            />
-
-            <Project
-              title="License Generator"
-              description="generate a license for your project on the terminal."
-              link="https://github.com/LOTaher/License-Generator"
-            />
+            {projects.map((project) => {
+              return (
+                <Project
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                />
+              );
+            })}
           </div>
-          <h1 className="mt-8 text-xl font-medium mb-4">blog</h1>
+          <h1 className="mt-4 text-xl font-medium mb-4">blog</h1>
           <div className="flex flex-col gap-4 mb-8">
             <span>
               {allBlogs.length > 0 ? (
