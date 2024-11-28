@@ -22,7 +22,7 @@ export default async function Home() {
                 <div className="">
                   <Image
                     src="/HS0-F23.png"
-                    alt="Laith Portrait"
+                    alt="Me teaching students Git at Oasis' Hack Session 0."
                     width={600}
                     height={100}
                     className="rounded-lg object-cover h-full"
@@ -31,7 +31,7 @@ export default async function Home() {
                 <div className="">
                   <Image
                     src="/ExpressWorkshop.png"
-                    alt="Laith Portrait"
+                    alt="Me teaching students about Express.js during Oasis' EX Series collaboration with NER."
                     width={300}
                     height={200}
                     className="rounded-lg object-cover w-full"
@@ -41,8 +41,8 @@ export default async function Home() {
 
               <div className="">
                 <Image
-                  src="/DemoDay.jpg"
-                  alt="Laith Portrait"
+                  src="/DemoDay-F24.jpg"
+                  alt="Me hosting Oasis' Demo Day."
                   width={300}
                   height={300}
                   className="rounded-lg object-cover h-full w-full"
