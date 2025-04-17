@@ -58,7 +58,7 @@ export default async function Home() {
               >
                 Northeastern University
               </a>
-              . Incoming Software Engineer @{" "}
+              {" "}and Software Engineer @{" "}
               <a
                 href="https://www.claim.co/"
                 target="_blank"
@@ -66,23 +66,7 @@ export default async function Home() {
               >
                 Claim
               </a>
-              . Director of{" "}
-              <a
-                href="https://oasisneu.com/"
-                target="_blank"
-                className="underline hover:text-neutral-200 text-white"
-              >
-                Oasis
-              </a>
-              . Previously @{" "}
-              <a
-                href="https://www.jnj.com/"
-                target="_blank"
-                className="underline hover:text-neutral-200 text-white"
-              >
-                Johnson & Johnson
-              </a>{" "}
-              as a Technology Co-op. I spend my free time building, maintaining
+              . I spend my free time building, maintaining
               and writing about tech!{" "}
             </p>
           </div>

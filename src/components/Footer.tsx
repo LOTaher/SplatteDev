@@ -8,21 +8,21 @@ export default function Footer() {
         <Link
           href="https://github.com/LOTaher"
           target="_blank"
-          className="text-neutral-200 hover:text-neutral-500 underline"
+          className="hover:text-neutral-200 text-white underline"
         >
           checkout my work on github
         </Link>
         <Link
           href="https://www.linkedin.com/in/laith-taher-88b816252/"
           target="_blank"
-          className="text-neutral-200 hover:text-neutral-500 underline"
+          className="hover:text-neutral-200 text-white underline"
         >
           connect with me on linkedin
         </Link>
         <Link
           href="https://twitter.com/splattedev"
           target="_blank"
-          className="text-neutral-200 hover:text-neutral-500 underline"
+          className="hover:text-neutral-200 text-white underline"
         >
           follow me on x
         </Link>
