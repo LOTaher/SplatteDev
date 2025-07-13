@@ -21,7 +21,7 @@ export const projects: ProjectProps[] = [
   {
     title: "softbase",
     description: "a key-value store backend for your next side project.",
-    link: "https://github.com/LOTaher/softbase",
+    link: "https://github.com/softbase-org",
   },
   {
     title: "Freehand",
