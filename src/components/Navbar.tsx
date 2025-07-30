@@ -8,13 +8,13 @@ export default function Navbar() {
       <Link href="/" className="">
         splatte.dev
       </Link>
-      <Link
-        className="hover:text-neutral-200 underline"
-        target="_blank"
-        href={"/Resume.pdf"}
-      >
-        resume
-      </Link>
+      {/* <Link */}
+      {/*   className="hover:text-neutral-200 underline" */}
+      {/*   target="_blank" */}
+      {/*   href={"/Resume.pdf"} */}
+      {/* > */}
+      {/*   resume */}
+      {/* </Link> */}
     </div>
   );
 }
